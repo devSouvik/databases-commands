@@ -65,7 +65,8 @@ update a row (Note: include all the fields, even in inserted before, else they w
 eg: 
 ```
 db.one.update({"name": "Rohit"}, 
-              {"name": "Rohit", 
+              {
+              "name": "Rohit", 
               "dept": "MCA", 
               "langs": "C, C++, Python", 
               "member_since": 5
@@ -75,7 +76,8 @@ db.one.update({"name": "Rohit"},
 update new row and also insert if not existing
 - eg: 
 ```db.one.update({"name": "Rohit"}, 
-                {"name": "Rohit", 
+                {
+                "name": "Rohit", 
                 "dept": "MCA", 
                 "langs": "C, C++, Python", 
                 "member_since": 3
